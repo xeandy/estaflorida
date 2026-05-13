@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- <base href="/"> -->
+  <base href="https://xeandy.github.io/estaflorida/">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwtGgdNOoPT4Yqm-t8dGhsIdPRkWisrpA"></script>
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description"
+    content="High-performance tennis academy focused on junior player development, group and private coaching, and year-round training programs.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Estaflorida">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Estaflorida</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html,
+
+    body {
+
+      margin: 0;
+
+      padding: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      overflow: hidden;
+
+      background: linear-gradient(to bottom,
+
+          #B06CFF 0%,
+
+          #D9A7FF 85%,
+
+          #FFFFFF 100%);
+
+    }
+
+    #loading {
+
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 9999;
+
+      background: linear-gradient(to bottom,
+
+          #B06CFF 0%,
+
+          #D9A7FF 85%,
+
+          #FFFFFF 100%);
+
+    }
+
+    flutter-view,
+
+    flt-glass-pane {
+
+      background: transparent !important;
+
+    }
+  </style>
+  <!-- <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(to bottom,
+          #B06CFF 0%,
+          #D9A7FF 100%);
+
+    }
+
+
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(180deg, #B06CFF 0%, #D9A7FF 100%);
+      z-index: 9999;
+    }
+
+    flutter-view,
+    flt-glass-pane {
+      background: transparent !important;
+    }
+  </style> -->
+
+</head>
+
+<body>
+  <div id="loading"></div>
+  <script src="flutter_bootstrap.js?v=20260513224501" async></script>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      const loading = document.getElementById('loading');
+      if (loading) loading.remove();
+    });
+
+  </script>
+</body>
+
+</html>
